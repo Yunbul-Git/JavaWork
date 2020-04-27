@@ -3,32 +3,127 @@
 <head>
 <meta charset="UTF-8">
 <title>테이블 과제</title>
+<style>
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	}
+th, td {
+	width: 30px;
+	height: 60px;
+	padding: 15px;
+	}
+
+
+</style>
+
+
 </head>
 <body>
-	<table style="width: 100%"> <!-- 1 -->
-		<tr>
-			<th></th>
-			<th></th>
-			<th></th>
-			<th></th>
-		</tr>
-	</table>
-	<table style="width: 100%"> <!-- 2 -->
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-	</table>
-	<table style="width: 100%"> <!-- 3 -->
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
-	</table>
+<table style="width: 100%"> <!-- 1 -->
+	<tr>
+		<th rowspan="3"></th>
+		<th colspan="3"></th>
+	</tr>
+	<tr>
+		<td colspan="3"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br>
+<hr>
+<br>
+<table style="width: 100%"> <!-- 2 -->
+	<tr>
+		<th rowspan="3"></th>
+		<th colspan="3"></th>
+	</tr>
+	<tr>
+		<td colspan="2"></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br>
+<hr>
+<br>
+<table style="width: 100%"> <!-- 3 -->
+	<tr>
+		<th style="width: 60px"></th>
+		<th colspan="2" rowspan="2"></th>
+		<th rowspan="3"></th>
+	</tr>
+	<tr>
+		<td style="width: 60px"></td>
+	</tr>
+	<tr>
+		<td style="width: 60px"></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<br>
+<hr>
+<br>
+<table style="width: 100%; border: 10px solid black"> <!-- 4 -->
+	<tr> <!-- 1 -->
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+	<tr> <!-- 2 -->
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr> <!-- 3 -->
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr> <!-- 4 -->
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr> <!-- 5 -->
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr> <!-- 6 -->
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	
+</table>
 	
 
 </body>
