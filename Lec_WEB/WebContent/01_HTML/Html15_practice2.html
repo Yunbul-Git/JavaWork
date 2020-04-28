@@ -34,9 +34,23 @@ background-color:rgb(200, 200, 200);
 border: 1px solid lightgrey;
 }
 
-table#date tr td:hover{
+table#date tr td:hover {
 background-color:cyan;
 }
+
+table#postlist tr td{
+text-align:center;
+}
+
+table#pagenumber tr th {
+padding:5px;
+}
+
+table#pagenumber tr th:hover {
+background-color:blue;
+color:white;
+}
+
 </style>
 
 </head>
@@ -51,7 +65,7 @@ background-color:cyan;
 	</table>
 	<table style="margin-left:250px">
 		<tr>
-			<th style="color: rgb(0,150,250)">&lt;2020-04-28&gt;</th>
+			<th style="color: rgb(0,150,250)"><button>&lt;</button>2020-04-28<button>&gt;</button></th>
 		</tr>
 	</table>
 	<table style="border: 1px solid lightgrey">
@@ -126,6 +140,70 @@ background-color:cyan;
 			</td>			
 		</tr>
 	</table>
-	<div>·2015년 6월 7일, 전체 검색결과, 진행중인 사업은 총 614 건 입니다.</div>
+	<br>
+	<div>· 2015년 6월 7일, 전체 검색결과, 진행중인 사업은 총 614 건 입니다.</div>
+	<table id="postlist">
+		<tr>
+			<th>번호</th>			
+			<th>지원사업명</th>			
+			<th>주관부처</th>			
+			<th>신청기간</th>			
+			<th>조회</th>			
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2015년 창조경제 벤처창업대전 정부포상 및 전시회 참가 신청..</td>
+			<td>중소기업청</td>
+			<td>2015.06.04 ~ 2015.06.30</td>
+			<td>731</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>2015년 창조경제 벤처창업대전 정부포상 및 전시회 참가 신청..</td>
+			<td>중소기업청</td>
+			<td>2015.06.04 ~ 2015.06.30</td>
+			<td>731</td>
+		</tr>
+		<tr>
+			<td>614</td>
+			<td>2015년 창조경제 벤처창업대전 정부포상 및 전시회 참가 신청..</td>
+			<td>중소기업청</td>
+			<td>2015.06.04 ~ 2015.06.30</td>
+			<td>731</td>
+		</tr>
+		<tr>
+			<td>614</td>
+			<td>2015년 창조경제 벤처창업대전 정부포상 및 전시회 참가 신청..</td>
+			<td>중소기업청</td>
+			<td>2015.06.04 ~ 2015.06.30</td>
+			<td>731</td>
+		</tr>
+	</table>
+	<table id="pagenumber" style="margin-left:175px">
+		<tr>
+			<th><button>&lt;&lt;</button></th>
+			<th><button>&lt;</button></th>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+			<th>4</th>
+			<th>5</th>
+			<th><button>&gt;</button></th>
+			<th><button>&gt;&gt;</button></th>
+		</tr>
+	</table>
+	<table style="margin-left:150px">
+		<tr style="background:lightgrey">
+			<td>
+				<select style="background:lightgrey">
+					<option>키워드</option>
+					<option>제목</option>
+					<option>주관부처</option>
+					<option>제목+주관부처</option>
+				</select>
+			</td>
+			<td><input type="text"><button>검색</button></td>
+		</tr>		
+	</table>
 </body>
 </html>
