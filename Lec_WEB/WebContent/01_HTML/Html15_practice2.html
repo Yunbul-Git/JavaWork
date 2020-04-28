@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>캘린더 폼 작성</title>
+<style>
+table#menu {
+
+text-align:center;
+overflow:hidden;
+background:lightgrey;
+}
+
+table#menu tr th{
+text-decoration:none;
+padding:20px;
+text-align:center;
+background-color:rgb(200, 200, 200);
+}
+
+table#menu tr th:hover{
+background-color:blue;
+color:white;
+}
+
+table#date tr td{
+width:90px;
+height:40px;
+border: 1px solid lightgrey;
+}
+
+table#date tr th{
+background-color:rgb(200, 200, 200);
+border: 1px solid lightgrey;
+}
+
+table#date tr td:hover{
+background-color:cyan;
+}
+</style>
+
+</head>
+<body>
+	<table id="menu">
+		<tr>
+			<th>정책차림표</th>
+			<th>미리보는 지원사업</th>
+			<th>마감임박 지원사업</th>
+			<th>접수중인 지원사업</th>
+		</tr>
+	</table>
+	<table style="margin-left:250px">
+		<tr>
+			<th style="color: rgb(0,150,250)">&lt;2020-04-28&gt;</th>
+		</tr>
+	</table>
+	<table style="border: 1px solid lightgrey">
+		<tr>
+			<td><input type="radio">전체</td>
+			<td><input type="radio">창업·벤처</td>
+			<td><input type="radio">소상공인</td>
+			<td><input type="radio">판로·수출</td>
+			<td><input type="radio">R&D</td>
+			<td><input type="radio">금융·세제</td>
+			<td><input type="radio">인력</td>
+		</tr>
+		<tr>
+			<td colspan="7">
+				<table id="date" style="border-collapse:collapse; border: 1px solid lightgrey">
+					<tr>
+						<th>일</th>
+						<th>월</th>
+						<th>화</th>
+						<th>수</th>
+						<th>목</th>
+						<th>금</th>
+						<th>토</th>
+					</tr>
+					<tr>
+						<td style="background:rgb(240, 240, 240)"></td>
+						<td style="background:rgb(240, 240, 240)"></td>
+						<td style="background:rgb(240, 240, 240)"></td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+					</tr>
+					<tr>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+					</tr>
+					<tr>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td style="background:rgb(240, 240, 240)"></td>
+						<td style="background:rgb(240, 240, 240)"></td>
+					</tr>
+					
+				</table>
+			</td>			
+		</tr>
+	</table>
+	<div>·2015년 6월 7일, 전체 검색결과, 진행중인 사업은 총 614 건 입니다.</div>
+</body>
+</html>
