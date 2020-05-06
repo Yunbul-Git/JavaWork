@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD practice1</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            float: left;  
+            padding: 15px;
+            border: 5px solid white;
+            height: 100px;
+        }
+
+        .clear {
+            clear : both;
+        }
+
+        
+
+        /* Mobile */
+        #logo {width:0; height:0; color: white; padding: 0px;}
+        .name {width: 100%;}
+        .menu {width: 100%;}
+        .mediaplayer {width: 100%; border: 0.5px solid black;}
+        .btnpast {width: 33.33%;}
+        .btnnext {width: 33.33%;}
+        .btnlist {width: 33.33%;}
+        .reply {width: 100%;}        
+        
+        /* Tablet */
+        @media screen and (min-width: 600px) {
+        #logo {width:16.66%; height:100px; color: black; padding: 15px;}
+        .name {width: 83.33%;}
+        .menu {width: 16.66%; height: 200px;}
+        .mediaplayer {width: 66.66%; height: 200px;}
+        .btnpast {width: 16.66%;}
+        .btnnext {width: 16.66%;}
+        .btnlist {width: 25%;}
+        .reply {width: 75%;}        
+        }
+        /*   PC   */
+        @media screen and (min-width: 768px) {
+        #logo {width: 33.33%; color: black;}
+        .name {width: 66.66%;}
+        .menu {width: 16.66%; height: 300px;}
+        .mediaplayer {width: 50%; height: 300px;}
+        .btnpast {width: 33.33%;}
+        .btnnext {width: 33.33%;}
+        .btnlist {width: 33.33%;}
+        .reply {width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="col-m-00 col-t-02 col-p-04" style="background-color: #996699;">무료 드라마 시청 홈페이지</div>-->
+    <div id="logo" style="background-color: #996699;">유튜브 로고</div>
+    <div class="name" style="background-color: blueviolet;">동영상 이름</div>
+    <div class="menu" style="background-color: cyan;">메뉴</div>
+    <div class="mediaplayer">동영상 화면</div>
+    <div class="btnpast" style="background-color: burlywood;">이전 영상</div>
+    <div class="btnnext" style="background-color: darkcyan">다음 영상</div>
+    <div class="btnlist" style="background-color: coral;">목록</div>
+    <div class="reply" style="background-color: darkgoldenrod;">댓글</div>
+</body>
+</html>
