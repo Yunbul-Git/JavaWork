@@ -4,12 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="themeA.css" rel="stylesheet" id="theme">
 </head>
+<script>
+function changeTheme() {
+    if(document.getElementById('theme').href == 'themeA.css'){
+        document.getElementById('theme').href == 'themeH.css';
+    } else {
+        document.getElementById('theme').href == 'themeA.css';
+    }
+}
+</script>
 <body>
     <header>제목</header>
-    <div><tr></tr>Menu</div>
-    <div></div>
-    <footer>Footer</footer>
-    
+    <div id = "Login">Login | Sign in</div>
+    <div id = "Language">
+        <select>
+            <option>Select Language</option>
+            <option>Korean</option>
+            <option>English</option>
+        </select>
+    </div>
+    <div id = "Theme">
+        Choose Theme
+        <button type="button" onclick="changeTheme()">Change Theme</button>        
+    </div>
+    <div>Menu</div>
+    <div>본문</div>
+    <footer>made by</footer>
 </body>
 </html>
