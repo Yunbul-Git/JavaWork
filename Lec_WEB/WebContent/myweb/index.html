@@ -6,18 +6,25 @@
     <title>Document</title>
     <link href="themeA.css" rel="stylesheet" id="theme">
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
-function changeTheme() {
-    if(document.getElementById('theme').href == 'themeA.css'){
-        document.getElementById('theme').href == 'themeH.css';
-    } else {
-        document.getElementById('theme').href == 'themeA.css';
-    }
-}
+$(document).ready(function(){
+    $("#changeTheme").click(function(){
+        if($("#theme").attr("href") == "themeA.css"){
+            $("#theme").attr("href", "themeH.css");
+        } else {
+            $("#theme").attr("href", "themeA.css");
+        }
+    });
+    $("#Login nth-child(1)").click(function(){
+        $(this).css("background-color", "cyan");
+    });
+});
 </script>
 <body>
-    <header>제목</header>
-    <div id = "Login">Login | Sign in</div>
+    <header id="header">WoW Stories
+        <div id = "Login"><span>Login</span> | <span>Sign in</span></div>
+    </header>    
     <div id = "Language">
         <select>
             <option>Select Language</option>
@@ -27,10 +34,15 @@ function changeTheme() {
     </div>
     <div id = "Theme">
         Choose Theme
-        <button type="button" onclick="changeTheme()">Change Theme</button>        
-    </div>
-    <div>Menu</div>
-    <div>본문</div>
-    <footer>made by</footer>
+        <button id="changeTheme">Change Theme</button>        
+    </div>    
+        <nav id="menu">
+            <ul>
+                <li>Cinematics</li>
+                <li>Writings</li>
+            </ul>            
+        </nav>    
+    <div id="content">본문</div>
+    <footer>made by Yunbul<br>email : aaa@bbb.com<br>Tel. 000-0000-0000</footer>
 </body>
 </html>
