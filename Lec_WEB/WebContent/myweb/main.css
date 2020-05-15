@@ -1,0 +1,21 @@
+#wrap {
+    margin-left: 5%;
+}
+#context .column {    
+    width : 25%;
+    margin-top : 3%;
+    margin-left: 5%;    
+    background-color: chartreuse;
+    display: inline-block;    
+}    
+#context .title:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+#context .context {
+    background-color: cornflowerblue;
+}
+#context .context:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+}

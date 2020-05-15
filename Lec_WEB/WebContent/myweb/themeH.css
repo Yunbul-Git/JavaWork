@@ -1,3 +1,108 @@
-* {
-    background-color: red;
+body {    
+    background-image: url('http://img.etoday.co.kr/pto_db/2017/06/20170630055356_1088133_710_340.jpg');
+    background-repeat: repeat-y;
+    background-size : 100%;
+}
+.clear {
+    clear : both;
+}
+#toolbar {
+    background-color: mediumblue;
+}
+#toolbar .tool {
+    float: right;
+    padding: 5px;
+}
+#language {    
+    width : 7.33%;
+    height : 28x;
+}
+#themebtn {
+    background-color: maroon;
+    width : 6.33%;
+}
+#login {
+    background-color: mediumaquamarine;
+    text-align: center;
+    width : 3.33%;
+    height : 20px;
+}
+#login:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+#signup {
+    background-color: mediumvioletred;
+    text-align: center;
+    width : 3.33%;
+    height : 20px;
+}
+#signup:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+#title {
+    text-align: center;
+    font-size : 30px;
+    height: 100px;
+}
+#context1 {
+    background-color: midnightblue;
+    width : 70%;
+    margin-left : 15%;
+}    
+#context1 .column {
+    width : 20%;
+    float: left;
+    background-color : navajowhite;
+    margin-left: 2.4%;
+    margin-right: 2.4%;
+    border: 1px solid black;
+}
+#context1 .title {
+    padding : 15px;
+}
+#context1 .title:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+#context1 .context{
+    padding : 5px 5px 5px 15px;
+
+}
+#context1 .context:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+#context2 {
+    background-color: blanchedalmond;
+    width : 80%;
+    margin-left : 10%;
+    margin-top: 20px;    
+    height  : 400px;
+}
+#context2 .column {    
+    width : 40%;
+    margin : 3% 5% 5% 5%;    
+    height : 70px;    
+    float : left;    
+    background-color: chartreuse;
+
+}
+#context2 .title:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+#context2 .context {
+    background-color: cornflowerblue;
+}
+#context2 .context:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+#footer {
+    background-color: #101010;
+    color : gray;
+    width : 80%;
+    margin : 5% 10%;
 }

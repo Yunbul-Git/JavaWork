@@ -45,12 +45,38 @@
  */
 $(document).ready(function(){
 	$("#run").click(function(e){
-		  var $box1 = $(".box1");
-		  var $box2 = $(".box2");
-		  var $box3 = $(".box3");
+		var $box1 = $(".box1");
+		var $box2 = $(".box2");
+		var $box3 = $(".box3");
 
-		  // TODO
-		  
+		// $box1.animate({left : "200px"}, 1000);
+		// $box2.animate({top : "0px"}, 1500);
+		// $box3.animate({top : "150px"}, 2000);
+
+		// box1 과 box2 의 애니메이션이 다 끝나고 나서 box3가 움직이게 하려면?
+
+		// box 2 끝나고 수행
+		// $box1.animate({left : "200px"}, 1000);
+		// $box2.animate({top : "0px"}, 1500, function(){
+		// 	$box3.animate({top : "150px"}, 2000);
+		// });
+
+		// delay()
+		// $box1.animate({left : "200px"}, 1000);
+		// $box2.animate({top : "0px"}, 1500);
+		// $box3.delay(1500).animate({top : "150px"}, 2000);
+		
+		// box1 과 box2 중 누가 먼저 끝나는지, 언제 끝나는지 알수 없다면
+		// $.when()
+		// 이벤트들이 끝나면 수행하는 Promise 객체 리턴
+		// thenable object (deffered object)
+		$box1.animate({left : "200px"}, 1000);
+		$box2.animate({top : "0px"}, 1500);		
+		
+		$.when($box1, $box2).then(function(){
+			// alert("완료!")
+			$box3.animate({top : "150px"}, 2000);
+		});
 	});	
 });
 </script>

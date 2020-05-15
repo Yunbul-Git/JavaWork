@@ -1,37 +1,90 @@
-* {
-    background-color: whitesmoke;    
+body {    
+    background-image: url('https://img.theqoo.net/img/sQoVZ.jpg');    
+    background-repeat: repeat-y;
+    background-size : 100%;
 }
-
-#header {
-    width: 100%;
+.clear {
+    clear : both;
+}
+#toolbar {
+    background-color: mediumblue;
+}
+#toolbar .tool {
+    float: right;
+    padding: 5px;
+}
+#language {    
+    width : 7.33%;
+    height : 28x;
+}
+#themebtn {
+    background-color: maroon;
+    width : 6.33%;
+}
+#login {
+    background-color: mediumaquamarine;
+    text-align: center;
+    width : 3.33%;
+    height : 20px;
+}
+#login:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+#signup {
+    background-color: mediumvioletred;
+    text-align: center;
+    width : 3.33%;
+    height : 20px;
+}
+#signup:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+#title {
+    text-align: center;
+    font-size : 30px;
     height: 100px;
 }
-
-#Login {    
-    float:right;
-    font-size: 10px;
-}
-
-#Login span:hover {
-    color : white;
-    cursor: pointer;
-}
-
-#clear {
-    display: clear;
-}
 #menu {
-    width:100%;
+    background-color: navajowhite;
+    width : 70%;
+    margin-left : 15%;
+    padding : 15px;    
+}    
+#menu .column {
+    width : 20%;    
+    background-color : navajowhite;
+    margin-left: 10%;    
+    border: 1px solid black;    
 }
-#menu li{
-    list-style: none;
-    width:50%;    
-    float: left;
+#menu .context {
+    
 }
-#menu li:hover{
+#menu .title {
+    padding : 15px;
+}
+#menu .title:hover{
     cursor: pointer;
-    color: crimson;    
+    text-decoration-line: underline;
 }
-#content{
-    height: 500px;
+#menu .context{
+    padding : 5px 5px 5px 15px;
+}
+#menu .context:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+#context {
+    background-color: blanchedalmond;
+    width : 80%;
+    margin-left : 10%;
+    margin-top: 20px;
+    height  : 400px;    
+}
+#footer {
+    background-color: #10101a;
+    color : gray;
+    width : 80%;
+    margin : 5% 10%;
 }
