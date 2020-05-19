@@ -1,0 +1,26 @@
+#listTop {    
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+}
+#list {
+    margin-top: 20px;
+    margin-left: 15%;
+    width: 70%;    
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#list .header, #list .list {
+    border: 1px solid black;
+}
+#list .tl {
+    display: inline-block;
+    background-color: blue;
+}
+#list .t1:hover {
+    text-decoration: underline;
+    cursor: pointer;    
+    color: blue;
+}
