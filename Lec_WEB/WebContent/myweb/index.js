@@ -5,7 +5,7 @@ $(document).ready(function(){
         if($('#theme').attr("href") == 'index.css'){
             $('#theme').attr("href", "themeH.css");
         } else {
-            $('#theme').attr("href", "themeA.css");
+            $('#theme').attr("href", "index.css");
         }
     });
     /* 본문 페이지에 main.html 불러오기 */ 
