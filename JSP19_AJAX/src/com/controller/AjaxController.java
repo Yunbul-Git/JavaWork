@@ -27,7 +27,7 @@ public class AjaxController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ajaxAction(request, response);
 	}
-
+	
 	protected void ajaxAction(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("ajaxAction()");
 		
