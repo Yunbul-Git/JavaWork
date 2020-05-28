@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구매 요청 게시판</title>
+</head>
+<script>
+    sindex = 0;
+    function textslide(){
+        if(sindex == 5) {
+            sindex == 0;
+            
+        }
+        if(sindex < 5) {
+            
+            sindex += 1;
+        }
+    }
+    setInterval(function() {textslide()}, 4000);
+</script>
+<body>
+    <div>구매 요청 게시판</div>
+    <br>
+    <hr>
+    <br>
+    <div>구매 요청 TOP 5
+        <div class="slide">TOP 1
+
+        </div>
+        <div class="slide">TOP 2
+
+        </div>
+        <div class="slide">TOP 3
+
+        </div>
+        <div class="slide">TOP 4
+
+        </div>
+        <div class="slide">TOP 5
+
+        </div>        
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div>구매 요청
+        <table>
+            <tr>
+                <th>번호</th>
+                <th>도서명</th>
+                <th>작성자</th>
+                <th>작성일</th>
+                <th>조회수</th>
+            </tr>
+            <tr>
+                <td>게시글 uid</td>
+                <td>책이름 받아오기</td>
+                <td>작성자 이름 받아오기</td>
+                <td>작성일 받아오기</td>
+                <td>조회수 받아오기</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
