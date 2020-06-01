@@ -121,7 +121,7 @@
 				
 				
 				<Resource auth="Container" description="DB Connection" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="5" maxTotal="50" maxWaitMillis="5000" name="jdbc/textDB" password="tiger0316" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="scott0316"/>
-			<Context docBase="JSP19_AJAX" path="/JSP19_AJAX" reloadable="true" source="org.eclipse.jst.jee.server:JSP19_AJAX"/></Host>
+			<Context docBase="JSP19_AJAX" path="/JSP19_AJAX" reloadable="true" source="org.eclipse.jst.jee.server:JSP19_AJAX"/><Context docBase="JSPEX_WebEditor" path="/JSPEX_WebEditor" reloadable="true" source="org.eclipse.jst.jee.server:JSPEX_WebEditor"/></Host>
 		</Engine>
 	</Service>
 </Server><!-- <Context docBase="JSP17_ConnectionPool" path="/JSP17_ConnectionPool" 
