@@ -99,7 +99,7 @@
 					Note: The pattern used is equivalent to using pattern="common" -->
 				<Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 				<Resource auth="Container" description="DB Connection" driverClassName="oracle.jdbc.driver.OracleDriver" maxIdle="5" maxTotal="50" maxWaitMillis="5000" name="jdbc/textDB" password="tiger0316" type="javax.sql.DataSource" url="jdbc:oracle:thin:@localhost:1521:XE" username="scott0316"/>
-			</Host>
+			<Context docBase="JSPEX_AJAX_SPA" path="/JSPEX_AJAX_SPA" reloadable="true" source="org.eclipse.jst.jee.server:JSPEX_AJAX_SPA"/></Host>
 		</Engine>
 	</Service>
 </Server><!-- <Context docBase="JSP17_ConnectionPool" path="/JSP17_ConnectionPool" 
